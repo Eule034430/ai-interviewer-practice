@@ -20,10 +20,13 @@ export default function App() {
         userResponse: userInput,
         chatHistory: updatedHistory,
       });
+      
+      const rawAI = response.data.response;
+      const cleanedAI = rawAI.replace(/^Interviewer:\s*/i, "");
 
       setChatHistory([
         ...updatedHistory,
-        { role: "Interviewer", message: response.data.response },
+        { role: "Interviewer", message: cleanedAI },
       ]);
       setUserInput("");
     } catch (error) {
