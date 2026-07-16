@@ -1,4 +1,4 @@
-# AI Interview Practice App 🎤🤖
+# AI Interview Practice App
 
 A simple AI-powered mock interview app that helps users practice interviews.  
 The app uses **Google Gemini API** for natural language responses, with a **React frontend** and **Express.js backend**.
